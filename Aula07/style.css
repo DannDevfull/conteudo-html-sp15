@@ -1,0 +1,35 @@
+body{
+    background-color: bisque;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /*Mudamos a característica do elemento pai, e todas as suas características foram passadas para o elmenento filho*/
+}
+h6{
+    font-size: 26px;
+    font-family: 'Times New Roman', Times, serif;
+    color:tomato;
+
+}
+
+h4{
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: darkgreen;
+}
+
+h2{
+    border: 4px solid tomato;
+    /*Estou adicionando bordar a todos os H2 de minha página, mas posso selecionar h2 específicos com algumas ferramentas*/
+}
+
+p{
+    border: 2px solid black;
+    padding: 20px;
+    /*padding é o espaçamento interno, entre o texto e a borda*/
+    
+    margin: 30px;
+
+    /*Margin é o espaçamento externo.
+    O navegador ja coloca por padrão uma margin
+    colocamos 30px, ou seja, 30 por 30 de cada lado
+    quando colocamos somente margin, ele já resume o margin de cima, embaixo, entre outros*/
+}
