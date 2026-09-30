@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Definindo  Links em HTML</title>
+    </head>
+    <body>
+        <h1>Definindo Links em HTML</h1>
+        <a href="https://www.w3schools.com/">Clique aqui</a>
+        <hr>
+
+        <h2>Utilizando valor _blank no atributo Target de um link</h2>
+
+        <a href="https://www.w3schools.com/" target="_blank">Clique aqui para abrir o link em outra aba</a>
+        <hr>
+
+        <h2>Exemplos de URL Absolutos e URL relativos</h2>
+        <a href="https://www.w3schools.com/">Exemplo de URL absoluta</a>
+        <!--Link que nos leva para um site externo, uma página externa-->
+        <br>
+        <br>
+        <a href="../Aula07/index.html">Exemplo de URL relativa</a>
+        <!--Um link local, ou seja, que nos direciona para um arquivo local, ou uma página do mesmo site. Pode ser chamado de link interno -->
+        <hr>
+        <h2>Definindo imagem como link</h2>
+        <a href="https://www.wikiart.org/pt" target="_blank">
+            <img src="Anoiteestrelada.jpg" alt="A noite estrelada" width="300" height="250">
+        </a>
+
+        <hr>
+
+        <h2>Atribuíndo endereço de email em links no HTML:</h2>
+        <a href="mailto:danndsj@outlook.com" >send E-mail</a>
+        <hr>
+
+        <h2> Utilizando O elemento Button para carregar um link</h2>
+        <button onclick="document.location='/Aula07/index.html'">Clique aqui</button>
+        <!--temos aqui um atributo de HTML que permite trabalharmos com JavaScript dentro do HTML. A propriedades, que são os objetos de nosso site ( DOM ) com seu valor.
+        Ou seja, 'Quando clicar, localize tal fonte em meu documento'
+        onclick é um atributo global de evento em HTML que serve para executar um código JavaScript quando o usuário clica em um elemento-->
+        <hr>
+        <h2>Atribuíndo o title para um link</h2>
+        <a href="Https://www.w3schools.com" title="Ir para o ínicio do w3schools">Cliqur aqui</a>
+    </body>
+</html>

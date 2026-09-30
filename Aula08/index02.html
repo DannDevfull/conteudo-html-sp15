@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Conteúdo Aula08 - HTML</title>
+
+        <style>
+
+         /*  
+            a:link{
+                color: rgb(255, 70, 3);
+                text-decoration: none;
+                
+            }
+
+            a:visited{
+                color: greenyellow;
+                text-decoration: none;
+            }
+
+            
+            a:hover{
+                color:purple;
+                text-decoration: underline;
+            }
+
+            a:active{
+                color: rgb(170, 8, 219);
+                text-decoration: none;
+                border: 1px solid mediumvioletred;
+                border-radius: 4px;
+                padding: 10px;
+            }
+         */  
+
+         /* tranformando links em botão com estilos */
+            a:link, a:visited{
+                color: #fff;
+                background-color: blueviolet;
+                border: 3px solid grey;
+                border-radius: 4px;
+                padding: 10px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                /* O display serve para ajusta o link em bloco*/
+                font-family: monospace;
+                font-size:18px;
+                font-weight: bold;
+            }
+
+            a:hover, a:active{
+                background-color: rgb(245, 243, 242);
+                color: rgb(0, 0, 0);
+                border: 2px solid crimson;
+                border-radius: 14px;
+                transition: .3s;
+            }
+
+            a:active{
+                box-shadow:inset 0 0 2px 0 #000;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Mudando estilos de links</h1>
+        
+        <a href="###">Isso é um link</a>
+        <hr>
+
+        <h2>Definindo estilo de botão em um link</h2>
+        
+        <a href="##">Link</a>
+    </body>
+</html>
