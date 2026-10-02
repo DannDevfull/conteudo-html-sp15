@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdo Aula10 - HTML</title>
+</head>
+<body>
+    <h1>Utilizando o elemento Picture no HTML</h1>
+
+    <picture>
+        <source media="(min-width: 650px)" srcset="Img/macImg.jpg">
+        <source media="(min-width: 450px)" srcset="Img/coffee.jpg">
+        <img src="Img/iphone.jpg" width="300px" height="250px">
+    </picture>
+    <!--
+     O <picture>elemento HTML oferece aos desenvolvedores web mais flexibilidade na especificação de recursos de imagem.
+
+        O <picture> elemento contém um ou mais <source>elementos, cada um fazendo referência a diferentes imagens através do srcset atributo. Dessa forma, o navegador pode escolher a imagem que melhor se adapta à visualização e/ou ao dispositivo atual.
+
+        Cada <source>elemento possui um mediaatributo que define quando a imagem é mais adequada. 
+    -->
+</body>
+</html>
