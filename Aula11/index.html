@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=initial-scale=1.0">
+        <title>Conteúdo Aula11 - HTML</title>
+
+        <style>
+
+            .lista-horizontal{
+               background-color: #333333;
+               list-style-type: none;
+                margin: 0px;
+                padding:0px;
+                overflow: hidden;  
+                
+                /* O overflow evita que o elemento filho se sobreponha o elemento pai */
+            }
+            /* " . " é o seletor de classe, que chama um determinada classe que determinamos em uma tag */
+
+
+            /* Essa sixtaxe significa que estamos conversando com o Li dentro de nossa classe */
+            .lista-horizontal li{
+                float: left;
+               
+            }
+
+            li a{
+                 color: ghostwhite;
+                font-family: monospace;
+                font-weight: bold;
+                text-decoration: none;
+                padding: 20px;
+                display: block; 
+                /* Transformamos esse elemento de linha em elemento em bloco */
+            }
+
+            /* Isso são pseudoclasses que permitem trabalhar na tag de acordo com sua condição ou estado. */
+            a:hover{
+                background-color: #666666;
+                color: black;
+                transition: .2s;
+            }
+
+            a:active{
+                background-color: #333333;
+                color: ghostwhite;
+                transition: .2s;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>listas não ordenadas</h1>
+        <ul>
+            <li>Item</li>
+            <li>Item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+        </ul>
+
+        <hr>
+
+        <h2>Marcadores de listas não ordenadas</h2>
+        <h3>List-style-type: disc;</h3>
+        <ul style="list-style-type: disc;">
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+        </ul>
+
+        <hr>
+
+        <h3>list-style-type: circle</h3>
+        <ul style="list-style-type: circle;">
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+        </ul>
+
+        <hr>
+
+        <h3>List-style-type: square;</h3>
+        <ul>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+        </ul>
+
+        <hr>
+
+        <h3>list-style-type: none;</h3>
+
+        <ul style="list-style-type: none;">
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+        </ul>
+
+        <hr>
+
+        <h2>Listas aninhadas</h2>
+        <ul>
+            <li></li>
+            <li></li>
+            <li>
+                <ul>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </li>
+            <li></li>
+            <li></li>
+        </ul>
+
+        <hr>
+
+        <h2>Lista Horizontal</h2>
+
+        <ul class="lista-horizontal">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Sobre">Sobre</a></li>
+            <li><a href="#Contatos">Contatos</a></li>
+            <li><a href="#Blog">Blog</a></li>
+        </ul>
+    </body>
+</html>
