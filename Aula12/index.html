@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdo Aula12 - HTML</title>
+
+    <style>
+        /* Alinhnado Div com Float */
+        .div-float{
+            width: 100%;
+            overflow: auto;
+            
+        }
+
+        .div-float div{
+            width: 33%;
+            float: left;
+        }
+
+
+        /* Alinhando divs com o Inline-block */
+        .div-inline-block{
+            width: 100%;
+        }
+
+        .div-inline-block div{
+            
+            display: inline-block;
+        }
+
+
+        /* Alinhando com o Flex */
+
+        .div-flex{
+            display: flex;
+            
+        }
+
+        .div-flex div{
+            width: 33%;
+            /* cada filho terá 33% em relação ao pai, que tem 100% */
+        }
+
+        /* Alinhando divs com Grid */
+
+        .div-grid{
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            /* Esse último grid define a maneira como trabalhamos com as colunas de nosso grid */
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Div em HTML</h1>
+
+    <h2>Div como contâiner</h2>
+    
+    <div style="background-color: gray;">
+        <h2>Isso é um H2</h2>
+        <p>Isso é um parágrafo</p>
+        <p>Isso é outro parágrafo</p>
+    </div>
+
+    <hr>
+
+    <h2>Centralizando Div</h2>
+
+    <div style=
+    "background-color: blueviolet; 
+    width: 250px; 
+    margin: auto;">
+        <!-- 
+            Margin auto faz com que o navegador calcule e defina uma margem automatica e equilibrado
+        -->
+        <h2>Isso é um H2</h2>
+        <p>Isso é um parágrafo</p>
+        <p>Isso é outro parágrafo</p>
+    </div>
+
+    <hr>
+
+    <h2>Várias Divs no documento</h2>
+
+    <div style="background-color: brown;">
+        <h2>Isso é um H2</h2>
+        <p>Isso é um parágrafo</p>
+        <p>Isso é um parágrafo</p>
+    </div>
+
+    <div style="background-color: coral;">
+        <h2>Isso é um H2</h2>
+        <p>Isso é um parágrafo</p>
+        <p>Isso é um parágrafo</p>
+    </div>
+
+    <div style="background-color: violet;">
+        <h2>Isso é um H2</h2>
+        <p>Isso é um parágrafo</p>
+        <p>Isso é um parágrafo</p>
+    </div>
+
+    <hr>
+
+    <h2>Alinhando Divs lada a lado </h2>
+
+    <h3>Alinhando com o Float</h3>
+
+    <div class="div-float">
+
+        <div style="background-color: brown;">
+            <h2>Isso é um H2</h2>
+            <p>Isso é um parágrafo</p>
+            <p>Isso é um parágrafo</p>
+        </div>
+
+        <div style="background-color: coral;">
+            <h2>Isso é um H2</h2>
+            <p>Isso é um parágrafo</p>
+            <p>Isso é um parágrafo</p>
+        </div>
+
+        <div style="background-color: violet;">
+            <h2>Isso é um H2</h2>
+            <p>Isso é um parágrafo</p>
+            <p>Isso é um parágrafo</p>
+        </div>
+
+    </div>
+
+    <br>
+
+    <h3>Alinhando divs com o Inline-Block</h3>
+
+    <div class="div-inline-block">
+
+        <div style="background-color: brown;">
+            <h2>Isso é um H2</h2>
+            <p>Isso é um parágrafo</p>
+            <p>Isso é um parágrafo</p>
+        </div>
+
+        <div style="background-color: coral;">
+            <h2>Isso é um H2</h2>
+            <p>Isso é um parágrafo</p>
+            <p>Isso é um parágrafo</p>
+        </div>
+
+        <div style="background-color: violet;">
+            <h2>Isso é um H2</h2>
+            <p>Isso é um parágrafo</p>
+            <p>Isso é um parágrafo</p>
+        </div>
+
+
+
+    </div>
+
+    <br>
+
+    <h3>Alinhando divs com Flex</h3>
+
+    <div class="div-flex">
+
+        <div style="background-color: brown;">
+            <h2>Isso é um H2</h2>
+            <p>Isso é um parágrafo</p>
+            <p>Isso é um parágrafo</p>
+        </div>
+
+        <div style="background-color: coral;">
+            <h2>Isso é um H2</h2>
+            <p>Isso é um parágrafo</p>
+            <p>Isso é um parágrafo</p>
+        </div>
+
+        <div style="background-color: violet;">
+            <h2>Isso é um H2</h2>
+            <p>Isso é um parágrafo</p>
+            <p>Isso é um parágrafo</p>
+        </div>
+
+    </div>
+
+    <br>
+
+    <h3>Alinhando divs com Grid</h3>
+
+    <div class="div-grid">
+
+        <div style="background-color: brown;">
+            <h2>Isso é um H2</h2>
+            <p>Isso é um parágrafo</p>
+            <p>Isso é um parágrafo</p>
+        </div>
+
+        <div style="background-color: coral;">
+            <h2>Isso é um H2</h2>
+            <p>Isso é um parágrafo</p>
+            <p>Isso é um parágrafo</p>
+        </div>
+
+        <div style="background-color: violet;">
+            <h2>Isso é um H2</h2>
+            <p>Isso é um parágrafo</p>
+            <p>Isso é um parágrafo</p>
+        </div>
+
+    </div>
+
+
+<!-- 
+    Use a expressão:
+    (div>h2+p*2)*3
+    para criar as três divs prontas.
+
+    O elemento Overflow serve para colocar a barrinha de rolagem para ver o conteúdo que está para fora.
+-->
+</body>
+</html>
