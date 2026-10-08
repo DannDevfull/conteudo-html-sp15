@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdo Aula14 - HTML</title>
+</head>
+<body>
+    <h1>JavaScript no HTML</h1>
+
+    <button onclick="document.getElementById('ex1').innerHTML = Date()">Adicionar Hora e Data</button>
+    <!-- O atributo onclick, funciona para executar Códigos de JavaScript dentro do meu HTML -->
+
+    <p id="ex1"></p>
+    <!-- O parágrafo está sem conteúdo pois o conteúdo será inserido pelo JavaScript -->
+    <hr>
+
+    <h2>Inserindo elementos com o JavaScript</h2>
+
+    <p id="ex2"></p>
+
+    <hr>
+
+    <h2>Alterando Estilos dos elementos com JavaScript</h2>
+
+    <p id="ex3">Somente a dor coletiva gera união</p>
+
+    <button onclick="AdicionarEstilo()">Alterar estilo</button>
+  
+
+    <script>
+
+        // Inserindo conteúdo com o JavaScript
+        document.getElementById("ex2").innerHTML = "Hello, JavaScript";
+
+        // Alterando estilo de elemento com o JavaScript
+        function AdicionarEstilo(){
+            document.getElementById("ex3").style.color ="white";
+            document.getElementById("ex3").style.backgroundColor ="black";
+            document.getElementById("ex3").style.border = "4px solid darkred";
+            document.getElementById("ex3").style.borderRadius ="6px";
+            document.getElementById("ex3").style.padding =" 10px";
+            document.getElementById("ex3").style.fontFamily = "monospace";
+        }
+
+    </script>
+
+</body>
+</html>
