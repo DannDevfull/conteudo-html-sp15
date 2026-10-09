@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdo Aula15 - HTML</title>
+</head>
+<body>
+    <h1>Caminhos de arquivos no HTML</h1>
+
+    <h2>Arquivo no mesmo nível do HTML</h2>
+    <img src="coffee.jpg" width="300" height="200">
+    <!-- 
+        Quando o arquivo esta no mesmo nível que o meu index, só devo especificar o nome da imagem pois ele está na mesma pasta com o mesmo arquivo. 
+    -->
+
+    <hr>
+
+    <h2>Arquivo de uma pasta de mesmo nível que o HTML</h2>
+    <img src="img/coffee.jpg" width="300" height="200">
+
+    <!--
+        Como o arquivo está no mesmo nível pasta está no mesmo nível do meu HTML, devo somente especificar a pasta em que ela está
+     -->
+
+     <hr>
+
+     <h2>Arquivo em uma pasta na raiz sa estrutura</h2>
+
+     <img src="/Aula15-img/coffee.jpg" width="300" height="200">
+
+     <!-- 
+        Estou entrando na pasta que está na raíz do meu projeto SP15.
+            Pastas na raíz, são aquelas que estão no primeiro nível do nosso projeto criado
+            Todos os Aulas1 -- 15 estão na raíz de nosso projeto.
+        Elas são a pasta raíz para os arquivos e pastas dentros delas -- Pasta Pai a raíz dos arquivos e pastas dentro dele.
+     -->
+
+     <hr>
+
+     <h2>Arquivo em um nível maior que o HTML</h2>
+
+     <img src="../coffee.jpg" width="300" height="250">
+
+     <!-- 
+        Um arquivo em um nível maior, são aqueles que estão na mesma pastas, mas dentro dela, em pastas diferentes     
+     -->
+
+        
+</body>
+</html>
