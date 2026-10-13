@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Conteúdo Aula16 - HTML</title>
+    </head>
+    <body>
+        <h1>Introdução a Formulário no HTML</h1>
+        
+        <form >
+            <!-- 
+                O form serve para criarmos um formulário para a entrada de dados do usuário.
+
+                Ele é um conteiner que armazenará tipos de entradas como: campos de textos, botões, seleção entre outros.
+             -->
+
+             <!-- 
+                O input é o elemento mais utilizado em um formulário que será os tipo de diferente campos de entradas de dados
+             -->
+
+             <!-- 
+                O label define o rótulo para vários elementos do formulário. É útil para leitores de tela, que lerá os rótulos.
+
+                O <label>elemento também ajuda os usuários que têm dificuldade em clicar em áreas muito pequenas (como botões de opção ou caixas de seleção), pois, quando o usuário clica no texto dentro do <label>elemento, o botão de opção/caixa de seleção é alternado.
+
+                O foratributo da <label>tag deve ser igual ao idatributo do <input> elemento para vinculá-los.
+             -->
+
+            <label for="p-nome">Primeiro Nome:</label><br>
+            <input type="text" name="p-nome" id="p-nome" value=""><br>
+            <label for="u-nome">Último Nome:</label><br>
+            <input type="text" name="u-nome" id="u-nome"><br>
+            <input type="button" value="Enviar dados">
+
+
+            <!-- 
+                Um formulário HTML é usado para coletar dados inseridos pelo usuário. Esses dados são geralmente enviados a um servidor para processamento 
+             -->
+        </form>
+
+        <hr>
+
+        <h2>input tipo Radio</h2>
+
+        <form >
+
+            <input type="radio" name="tec-opcoes" id="html" value="HTML">
+            <label for="html">HTML</label>
+            <br>
+            <input type="radio" name="tec-opcoes" id="css" value="CSS">
+            <label for="css">CSS</label>
+            <br>
+            <input type="radio" name="tec-opcoes" id="js" value="JavaScript">
+            <label for="js">JavaScript</label>
+            
+            
+            <!--
+                Dentro dessa estrutura, só é possível por conta do name. Com o mesmo name em todas as opções, só posso selecionar uma. 
+                Se eu colocar mais name, poderei selecionar mais de um.
+             -->
+        </form>
+    </body>
+</html>

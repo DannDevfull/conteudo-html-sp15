@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+    <head>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>Conteúdo Aula 16 - HTML</title>
+
+
+        <style>
+
+            *{
+                box-sizing: border-box;
+
+                /* Estamos colocando um borda invisível tranvando o elemento, evitando com que o seu padding aumente, involuntáriamente, seu tamanho.
+                Note a Div centro */
+            }
+
+            .esq{
+                background-color: magenta;
+                padding: 20px;
+                width: 20%;
+                float: left;
+            }
+
+            .centro{
+                background-color: blueviolet;
+                padding: 20px;
+                width: 60%;
+                float: left;
+            }
+
+            .dir{
+                background-color: tomato;
+                padding: 20px;
+                width: 20%;
+                float: left;
+            }
+            
+            @media screen and (max-width: 800px) {
+                
+                .esq, .centro, .dir{
+                    width: 100%;
+                }
+
+                /*
+                    Estamos usando os media query.
+                    Eles define respondividade, redimensionando o layout de nosso site, condicionado a um tamanho de tela especifico.
+                    
+                    Com as media query, você pode definir estilos completamente diferentes para diferentes tamanhos de navegador.
+
+                    Logo, nesse exemplo, todas as estilizações abaixo serão aplicadas em telas té 800px  
+                    
+                 */
+                
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Responsividade no HTML</h1>
+        <h2>Imagem responsiva com width: 100%</h2>
+
+        <img src="carros.jpg" style=" width: 100%;">
+
+        <hr>
+
+        <h2>Imagem Responsiva com max-width: 100%</h2>
+
+        <img src="carros.jpg" style=" max-width: 100%; width: 600px;">
+
+        <hr>
+
+
+        <h2 style="font-size: 5vw;">Texto responsivo com a unidade de medida vw</h2>
+        <p font-size="3vw">Somente a dor coletiva gera união</p>
+
+        <hr>
+
+        <h2>Responsividade com media query</h2>
+        <div class="esq">
+            <p>Div esquerda</p>
+        </div>
+
+        <div class="centro">
+            <p>Div centro</p>
+        </div>
+        
+        <div class="dir">
+            <p>Div direita</p>
+        </div>
+    </body>
+</html>
